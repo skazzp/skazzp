@@ -1,12 +1,11 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
-  "homepage": "https://github.com/Pikimell/test-repo",
-  "source": "src/index.html",
+  "homepage": "https://github.com/skazzp/skazzp/",
+  "source": "./src/index.html",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build ./src/*.html --public-url /test-repo/",
+    "build": "parcel build ./src/*.html --public-url /skazzp/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +23,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.21"
-  }
+  },
+  "main": "index.js",
+  "description": ""
 }
