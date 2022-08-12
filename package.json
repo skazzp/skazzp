@@ -19,7 +19,8 @@
     "url": "https://github.com/Pikimell/test-repo/issues"
   },
   "devDependencies": {
-    "parcel": "^2.7.0"
+    "parcel": "^2.7.0",
+    "posthtml-include": "^1.7.4"
   },
   "dependencies": {
     "lodash": "^4.17.21"
@@ -32,6 +33,11 @@
   "targets": {
     "default": {
       "distDir": "./dist"
+    }
+  },
+  "plugins": {
+    "posthtml-include": {
+      "root": "./src"
     }
   }
 }
