@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "homepage": "https://github.com/skazzp/skazzp/",
   "scripts": {
-    "start": "parcel src/index.html -p 3000 --open",
+    "start": "parcel ./src/index.html -p 3000 --open",
     "build:parcel": "parcel build ./src/index.html",
     "build": "npm run build:parcel"
   },
