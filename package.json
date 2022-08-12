@@ -4,7 +4,8 @@
   "homepage": "https://github.com/skazzp/skazzp/",
   "scripts": {
     "start": "parcel src/index.html -p 3000 --open",
-    "build": "parcel build"
+    "build:parcel": "parcel build ./src/index.html",
+    "build": "npm run build:parcel"
   },
   "repository": {
     "type": "git",
