@@ -1,0 +1,37 @@
+DOM
+
+Для навігації по цій ієрархії елементи мають наступні властивості.
+elem.parentNode - вибере батьківський elem.
+elem.childNodes - псевдомасив, зберігає всі дочірні елементи, включно з текстовими.
+elem.children - псевдомасив, зберігає тільки дочірні вузли-елементи, тобто ті, що відповідають тегам.
+elem.firstChild - вибере перший дочірній елемент всередині elem, включно з текстовими вузлами.
+elem.firstElementChild - вибере перший дочірній вузол-елемент всередині elem.
+elem.lastChild - вибере останній дочірній елемент всередині elem, включно з текстовими вузлами.
+elem.lastElementChild - вибере останній дочірній вузол-елемент всередині elem.
+elem.previousSibling - вибере елемент «зліва» від elem (його попереднього сусіда).
+elem.previousElementSibling - вибере вузол-елемент «зліва» від elem (його попереднього сусіда).
+elem.nextSibling - вибере елемент «праворуч» від elem (його наступного сусіда)
+elem.nextElementSibling - вибере вузол-елемент «праворуч» від elem (його наступного сусіда).
+
+element.addEventListener(event, handler, options);
+
+
+//////////////////////////////////////////////////////////////////
+Событие по нажатию кнопки вешается на DOCUMENT
+  function onButtonClose(e) {
+    if (e.code === 'Escape') {
+      document.removeEventListener('keydown', onButtonClose);
+      instance.close();
+    }
+  }
+  document.addEventListener('keydown', onButtonClose);
+
+
+
+trim() - обрезает в строке лишние пробелы
+
+debounce - используется для событий input 
+
+matches / closest
+Element.matches() вернёт true или false, в зависимости от того, соответствует ли элемент указанному css-селектору.
+Element.closest() возвращает ближайший родительский элемент

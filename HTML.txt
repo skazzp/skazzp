@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  min-width: 100%;
+  height: auto;
+}
+h1,h2,h3,h4,h5,h6,p,ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+/**
+  |============================
+  | Сітка на display: flex;
+  |============================
+*/
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+.card-set-item {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
+
+/* Для SVG */
+fill: currentColor; 
+
+/* зафиксировать бг для скрола секции */
+background-image: url();
+background-repeat: no-repeat;
+background-size: cover;
+background-position: top-center;
+backgroumd-attachment: fixed;
+
+/* фон внутри текста */
+-webkit-background-clip: text;
+color: transparent;
+background-image: url();
+background-repeat: no-repeat;
+
+*
+flex-grow: 1;
