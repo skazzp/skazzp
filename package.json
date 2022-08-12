@@ -1,7 +1,7 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "source": "src/index.html",
+  "source": "./dist/index.html",
   "homepage": "https://github.com/skazzp/skazzp/",
   "scripts": {
     "start": "parcel ./src/index.html -p 3000 --open",
@@ -28,5 +28,10 @@
     "minBundles": 1,
     "minBundleSize": 3000,
     "maxParallelRequests": 20
+  },
+  "targets": {
+    "default": {
+      "distDir": "./dist"
+    }
   }
 }
